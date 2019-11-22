@@ -45,6 +45,7 @@ class Ncurses(AutotoolsPackage):
 
     def configure(self, spec, prefix):
         opts = [
+            'ac_cv_path_LDCONFIG=true',
             '--with-shared',
             '--with-cxx-shared',
             '--enable-overwrite',
